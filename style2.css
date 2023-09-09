@@ -1,0 +1,334 @@
+
+#header{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+#header button{
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    border-radius: 5px;
+   box-shadow: 3px 3px rgb(158, 154, 154);
+}
+#header button:hover{
+    background-color: rgb(228, 225, 220);
+    transform: scale(1.1);
+    color: brown;
+    box-shadow: 3px 3px 3px rgb(15, 15, 15);
+}
+#divContainer{
+    border: 1px solid black;
+    display: flex;
+   
+}
+.folders{
+    height: 120px;
+    width: 150px ;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: lightcyan;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px  rgb(15, 15, 15);
+}
+.folders span[action]{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+.folders span[action]:hover{
+    color: blue;
+}
+.folders div[purpose=name]{
+    padding-top: 70px;
+    color: brown;
+    font-weight: 500;
+    margin-left: 50px;
+}
+#divBreadCrumb{
+    display: flex;
+    margin: 10px;
+    border: 1px solid black;
+}
+#divBreadCrumb a{
+    padding: 10px;
+    background-color: rgb(238, 216, 145);
+    border-right: 5px solid lightslategray;
+    margin-right: 2px;
+    cursor: pointer;
+}
+#divBreadCrumb a:hover{
+    background-color: azure;
+    color: brown;
+    text-decoration: underline;
+}
+
+.text-file{
+    height: 120px;
+    width: 150px ;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(171, 190, 243);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px  rgb(15, 15, 15);
+}
+.text-file span[action]{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+.text-file span[action]:hover{
+    color: rgb(228, 72, 72);
+}
+.text-file div[purpose=name]{
+    padding-top: 70px;
+    color: brown;
+    font-weight: 500;
+    margin-left: 50px;
+}
+.album{
+    height: 120px;
+    width: 150px ;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: rgb(154, 223, 151);
+    color: black;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px  rgb(15, 15, 15);
+}
+.album span[action]{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 500;
+}
+.album span[action]:hover{
+    color: rgb(228, 72, 72);
+}
+.album div[purpose=name]{
+    padding-top: 70px;
+    color: brown;
+    font-weight: 500;
+    margin-left: 50px;
+}
+#app{
+    margin: 10px;
+    border: 5px solid black;
+}
+#app-title-bar{
+    display: flex;
+    background-color: antiquewhite;
+   height: 40px;
+}
+ 
+#app-title{
+    width: 94%;
+    text-align: center;
+}
+
+#app-menu-bar{
+    display: flex;
+    background-color: rgb(2, 85, 53);
+   height: 43px;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+}
+#app-body{
+    display: flex;
+    background-color: rgb(218, 218, 218);
+   height: 500px;  
+
+}
+.notepad-body{
+    width: 100%;
+    height: 100%;
+}
+.notepad-body textarea{
+    width: 1868px; 
+    height: 493px;
+}
+.notepad-menu{
+    width: 100%;
+    padding: 5px;
+  
+}
+.notepad-menu *{
+    margin: 0px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid rgb(172, 158, 158);
+}
+.notepad-menu span{
+    vertical-align: bottom;
+    background-color: rgb(163, 161, 161);
+    border: 1px solid white;
+
+   
+}
+.notepad-menu span:hover{
+   transform: scale(1.08);
+   color: white;
+   background-color: black;
+}
+.notepad-menu span[pressed=true]{
+    transform: scale(1.08);
+    color: black;
+    background-color: white;
+ }
+ .notepad-menu span[title]:hover::after{
+    content: attr(title);
+    display: none;
+ }
+.notepad-menu input[type=color]{
+    width: 30px;
+ 
+}
+.notepad-menu select{
+    height: 28px;
+    background-color: rgb(53, 50, 50);
+    color: rgba(241, 233, 233, 0.87);
+    font-weight: 750;
+}
+a[purpose=download]{
+    display: none;
+}
+#window-action{
+   display: flex;
+   justify-content:space-evenly;
+   align-items: center;
+   width: 120px;
+ 
+
+}
+#window-action span{
+    font-size: 32px;
+    cursor: pointer;
+
+}
+#window-action span:hover{
+    transform: scale(1.1);
+   color: rgb(159, 226, 226);
+   /* background-color: black; */
+   /* border-radius: 5px; */
+}
+
+#window-action span[purpose=align]{
+ padding-bottom: 18px;
+}
+
+#window-action span[title]:hover:after{
+ /* cursor: pointer; */
+ content: attr(title);
+ display: none;
+
+}
+.notepad-menu input[action=upload]{
+    display: none;
+}
+
+.album-menu{
+    width: 100%;
+    padding: 5px;
+  
+}
+.album-menu *{
+    margin: 0px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    border: 2px solid rgb(172, 158, 158);
+}
+.album-menu span{
+    vertical-align: bottom;
+    background-color: rgb(163, 161, 161);
+    border: 1px solid white;
+
+   
+}
+.album-menu span:hover{
+   transform: scale(1.08);
+   color: white;
+   background-color: black;
+}
+.notepad-menu span[pressed=true]{
+    transform: scale(1.08);
+    color: black;
+    background-color: white;
+ }
+ .album-menu span[title]:hover::after{
+    content: attr(title);
+    display: none;
+ }
+
+ .album-body{
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+ }
+ .photo-list{
+    border: 1px solid black;
+    padding: 5px;
+    display: flex;
+    margin: 5px;
+    margin-bottom: 10px;
+ }
+ .photo-list img{
+    height: 8%;
+    width: 8%;
+    border: 2px solid rgb(17, 65, 199);
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 5px;
+ }
+ .photo-list img:hover{
+    transform: scale(1.05);
+ }
+ .photo-list img[pressed=true]{
+    transform: scale(1.02);
+    border: 2px solid rgb(126, 119, 119);
+    box-shadow: 2px 2px 2px  rgb(126, 119, 119);
+    opacity: 1;
+ }
+ .photo-list img[pressed=false]{
+    opacity: 0.7;
+ }
+ .photo-body{
+    border: 1px solid black;
+    display: flex;
+    height: 70%;
+    margin: 5px;
+    /* align-items: center; */
+    justify-content: center;
+ }
+ .photo-body > div{
+    margin: 5px;
+    flex-direction: column;
+
+ }
+ .photo-main img{
+margin: 8px;
+ height: 325px;
+ width: 600px;
+ border-radius: 10px;
+ border: 2px solid rgb(17, 65, 199);
+
+ }
+ .left-move{
+    display: flex;
+    justify-content: center;
+ }
+ .right-move{
+    display: flex;
+    justify-content: center;
+    
+ }

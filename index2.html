@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header">
+        <button id="addfolder">Add Folder</button>
+        <button id="addtext">Add Text File</button>
+        <button id="addalbum">Add Album</button>
+    </div>
+    <div id="divBreadCrumb">
+        <a purpose="path" rid="-1">Root</a>
+    </div>
+    <div id="divContainer">
+
+    </div>
+    <div id="app">
+        <div id="app-title-bar">
+            <div id="app-title">here the title will come</div>
+            <div id="window-action">
+                <span purpose="align" title="minimize" class="material-icons">minimize</span>
+                <span title="maximize" class="material-icons">fullscreen</span>
+                <span title="close" id="app-close" class="material-icons">close</span>
+            </div>
+        </div>
+        <div id="app-menu-bar"></div>
+        <div id="app-body"></div>
+
+    </div>
+
+    <template id="templates">
+        <div class="folders" type="folder" rid="" pid="">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose="name"></div>
+        </div>
+        <div class="text-file" type="text-file" rid="" pid="">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose="name"></div>
+        </div>
+        <div class="album" type="album" rid="" pid="">
+            <span action="rename">Rename</span>
+            <span action="delete">Delete</span>
+            <span action="view">View</span>
+            <div purpose="name"></div>
+        </div>
+        <a purpose="path" rid="-1"></a>
+        <div purpose="notepad-menu" class="notepad-menu">
+            <span action="save" title="save" class="material-icons">save</span>
+            <span action="bold" title="bold" pressed="false" class="material-icons">format_bold</span>
+            <span action="italic" title="italic" pressed="false" class="material-icons">format_italic</span>
+            <span action="underline" title="underline" pressed="false" class="material-icons">format_underline</span>
+            <input type="color" purpose="bg-color">
+            <input type="color" purpose="fg-color">
+            <select action="font-family">
+                <option value="monospace">monospace</option>
+                <option value="serif">serif</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="cursive">cursive</option>
+            </select>
+            <select action="font-size">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+            </select>
+            <span action="download" title="download" class="material-icons">download</span>
+            <span action="forUpload" title="upload" class="material-icons">upload</span>
+            <input action="upload" type="file">
+            <a purpose="download" href="http://google.com">link</a>
+        </div>
+        <div purpose="notepad-body" class="notepad-body">
+           <textarea > i am in notepad body</textarea>
+         </div>
+         <div purpose="album-menu" class="album-menu">
+            <span action="save" title="save" class="material-icons">save</span>
+            <span action="download" title="download" class="material-icons">download</span>
+            <span action="forUpload" title="upload" class="material-icons">upload</span>
+
+            <span action="add" title="addPhoto" class="material-icons">add</span>
+            <span action="delete" title="delete" class="material-icons">delete</span>
+            <span action="left" title="forward" class="material-icons">keyboard_double_arrow_left</span>
+            <span action="right" title="backward" class="material-icons">keyboard_double_arrow_right</span>
+
+            <span action="play" title="play" class="material-icons">play_arrow</span>
+            <span action="pause" title="pause" class="material-icons">pause</span>
+        
+         </div>
+         <div purpose="album-body" class="album-body">
+            <div class="photo-list">
+      
+            </div>
+            <div class="photo-body">
+                <div class="left-move">
+                    <span action="left" title="backward" class="material-icons">keyboard_double_arrow_left</span>
+                </div>
+                <div class="photo-main">
+                    <img src="" alt="please click on photo">
+                </div>
+                <div class="right-move">
+                    <span action="right" title="forward" class="material-icons">keyboard_double_arrow_right</span>
+                </div>
+            </div>
+
+         </div>
+    </template>
+
+    <script src="index3.js"></script>
+</body>
+
+</html>

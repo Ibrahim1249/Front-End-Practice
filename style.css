@@ -1,0 +1,65 @@
+/* h1{
+    color: brown;
+} */
+
+#container {
+    border: 1px solid black;
+    /* padding: 10px; */
+    margin-top: 10px;
+    display: flex;
+}
+
+.folder {
+    background-color: rgb(186, 238, 238);
+    border-radius: 5px;
+    margin: 10px;
+    height: 120px;
+    width: 140px;
+    padding: 5px;
+    border: 2px solid gray;
+
+
+}
+#myFirstBtn{
+    border-radius: 5px;
+    background-color: lightgrey;
+    margin-left:600px;
+    width: 150px;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+#myFirstBtn:hover{
+transform: scale(1.03);
+}
+.folder [action]{
+    text-decoration: underline;
+    cursor: pointer;
+    color: brown;
+}
+div[purpose=name]{
+    margin-top: 50px;
+    color: blue;
+}
+#divBreadCrumb{
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 5px;
+    display: flex;
+    padding: 10px;
+
+ 
+}
+.path{
+  
+    font-size: 1.5rem;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+.path:hover{
+    color: blue;
+    background-color: white;
+    text-decoration: underline;
+}
